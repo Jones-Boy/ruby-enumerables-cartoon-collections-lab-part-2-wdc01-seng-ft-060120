@@ -11,11 +11,7 @@ def square_array(array)
 end
 
 def summon_captain_planet(planeteer_calls)
- planeteer_calls = []
-  array.collect do |calls|
-    planeteer_calls << "#{calls.capitalize}!"
-  end
-  planeteer_calls
+ 
 end
 
 
