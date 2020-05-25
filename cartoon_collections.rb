@@ -16,11 +16,9 @@ end
 
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls = []
-  array.collect do |calls|
-    planeteer_calls << "#{calls.capitalize}!"
-  end
-  planeteer_calls
+  array.any? do |word|
+    word.length > 4
+end
 end
 
 def find_valid_calls(planeteer_calls)
