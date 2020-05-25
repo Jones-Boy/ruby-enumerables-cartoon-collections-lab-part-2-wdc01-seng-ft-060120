@@ -11,13 +11,11 @@ def square_array(array)
 end
 
 def summon_captain_planet(planeteer_calls)
- nu_array = []
-  i = 0 
-  while i < array.length 
-    nu_array << array[i].capitalize + "!"
-    i += 1 
-  end 
-  nu_array
+ planeteer_calls = []
+  array.collect do |calls|
+    planeteer_calls << "#{calls.capitalize}!"
+  end
+  planeteer_calls
 end
 
 
